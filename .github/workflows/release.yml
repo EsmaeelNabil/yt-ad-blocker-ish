@@ -1,0 +1,26 @@
+name: Release Plugin ✈️
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.1
+
+      - name: Create plugin zip
+        run: |
+          mkdir plugin
+          cp -R src plugin/
+          cp manifest.json plugin/
+          zip -r plugin.zip plugin
+
+      - name: Release
+        uses: softprops/action-gh-release@v2

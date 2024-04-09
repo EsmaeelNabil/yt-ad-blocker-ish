@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "crazy-yt",
+  "description": "if you are lazy, make it go crazy",
+  "version": "1.0",
+  "action": {
+    "default_popup": "./src/index.html",
+    "default_icon": "./src/crazy.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["src/yt.js"],
+      "matches": [
+        "https://www.youtube.com/watch?v=*"
+      ]
+    }
+  ]
+}
