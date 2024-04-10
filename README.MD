@@ -12,7 +12,6 @@
 ### Prerequisites
 
 - A Chrome-based browser (Google Chrome, Brave, Arc, etc.)
-- Download from releases and load `plugin` folder after `unzipping it` or clone the project and follow.
 
 ### Steps
 
