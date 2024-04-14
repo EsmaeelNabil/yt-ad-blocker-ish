@@ -11,5 +11,5 @@ function refreshPageOnClass() {
   refreshPageOnClass();
   
   // Use an interval to check periodically
-  setInterval(refreshPageOnClass, 100); // Check every 5 seconds 
+  setInterval(refreshPageOnClass, 400); // Check every 5 seconds 
 
