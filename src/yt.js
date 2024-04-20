@@ -1,7 +1,7 @@
 console.log("crazy stuff! has been loaded!")
 
 function refreshPageOnClass() {
-    const elementsToWatch = document.getElementsByClassName('ytp-ad-player-overlay-instream-info');
+    const elementsToWatch = document.getElementsByClassName('ytp-ad-player-overlay-layout');
     if (elementsToWatch.length > 0) {
       window.location.reload(); // Refresh the page
     }
@@ -11,5 +11,5 @@ function refreshPageOnClass() {
   refreshPageOnClass();
   
   // Use an interval to check periodically
-  setInterval(refreshPageOnClass, 400); // Check every 5 seconds 
+  setInterval(refreshPageOnClass, 500); // Check every 5 seconds 
 
